@@ -6,10 +6,25 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "biome lint --write .",
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "dependencies": {
-    "astro": "^5.0.5"
+    "@astrojs/svelte": "^7.0.1",
+    "astro": "^5.0.5",
+    "svelte": "^5.11.2",
+    "typescript": "^5.7.2"
   },
-  "packageManager": "pnpm@9.14.4+sha512.c8180b3fbe4e4bca02c94234717896b5529740a6cbadf19fa78254270403ea2f27d4e1d46a08a0f56c89b63dc8ebfd3ee53326da720273794e6200fcf0d184ab"
+  "packageManager": "pnpm@9.14.4+sha512.c8180b3fbe4e4bca02c94234717896b5529740a6cbadf19fa78254270403ea2f27d4e1d46a08a0f56c89b63dc8ebfd3ee53326da720273794e6200fcf0d184ab",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@tailwindcss/vite": "4.0.0-beta.6",
+    "husky": "^9.1.7",
+    "prettier": "^3.4.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "tailwindcss": "4.0.0-beta.6"
+  }
 }
